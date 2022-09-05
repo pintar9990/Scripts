@@ -1,4 +1,4 @@
-import string, random, os
+import string, random, os, time
 
 with open('Buscador aleatorio.bat', 'w') as f:
     f.writelines("start msedge\n")
@@ -20,4 +20,7 @@ with open('Buscador aleatorio.bat', 'w') as f:
 f.close()
 
 os.startfile("Buscador aleatorio.bat")
+time.sleep(40)
+os.remove("Buscador aleatorio.bat")
+
 exit()
