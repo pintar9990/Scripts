@@ -2,6 +2,7 @@ import string, random, os, time
 
 with open('Buscador aleatorio.bat', 'w') as f:
     f.writelines("start msedge\n")
+    f.writelines("timeout /T 1 > nul\n")
     for k in range(35):
         randome = ""
         for x in range(16):
